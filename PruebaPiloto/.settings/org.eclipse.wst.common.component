@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="PruebaPiloto">
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
-        <property name="context-root" value="PruebaPiloto"/>
-        <property name="java-output-path" value="/PruebaPiloto/build/classes"/>
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="PruebaPilotoEJB.jar" deploy-path="/" handle="module:/resource/PruebaPilotoEJB/PruebaPilotoEJB">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="PruebaPilotoWeb.war" deploy-path="/" handle="module:/resource/PruebaPilotoWeb/PruebaPilotoWeb">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
     </wb-module>
 </project-modules>
