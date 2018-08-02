@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="PruebaPilotoEJB" transaction-type="JTA">
+	<jta-data-source>jdbc/piloto</jta-data-source>
+	<class>com.asesoftware.pruebapiloto.entidades.Categoria</class>
+	<class>com.asesoftware.pruebapiloto.entidades.Cita</class>
+	<class>com.asesoftware.pruebapiloto.entidades.Cliente</class>
+	<class>com.asesoftware.pruebapiloto.entidades.ClienteVehiculo</class>
+	<class>com.asesoftware.pruebapiloto.entidades.Factura</class>
+	<class>com.asesoftware.pruebapiloto.entidades.Foto</class>
+	<class>com.asesoftware.pruebapiloto.entidades.Mecanico</class>
+	<class>com.asesoftware.pruebapiloto.entidades.Producto</class>
+	<class>com.asesoftware.pruebapiloto.entidades.Repuesto</class>
+	<class>com.asesoftware.pruebapiloto.entidades.Servicio</class>
+	<class>com.asesoftware.pruebapiloto.entidades.ServicioRepuesto</class>
+	<class>com.asesoftware.pruebapiloto.entidades.Vehiculo</class>
+	</persistence-unit>
+</persistence>
