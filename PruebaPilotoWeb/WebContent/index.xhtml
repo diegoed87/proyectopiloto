@@ -8,12 +8,29 @@
     xmlns:p="http://primefaces.org/ui">
 
 	<h:head>
-		<p:outputLabel value="Lista de CLientes"></p:outputLabel>
 	</h:head>
 	<h:body>
-		<p:outputLabel value="Nombre: "></p:outputLabel>
-		<p:inputText></p:inputText>
-		<p:button value="Registrar"></p:button>
+		<p:dataTable var="cli" value="#{clienteMB.listaClientes}">
+    <f:facet name="header">
+        Lista de Clientes
+    </f:facet>
+ 
+    <p:column headerText="CÓDIGO CLIENTE">
+        <h:outputText value="#{cli.idCliente}" />
+    </p:column>
+ 
+    <p:column headerText="NOMBRE">
+        <h:outputText value="#{cli.nomCliente}" />
+    </p:column>
+ 
+    <p:column headerText="CELULAR">
+        <h:outputText value="#{cli.celCliente}" />
+    </p:column>
+ 
+    <f:facet name="footer">
+        
+    </f:facet>
+</p:dataTable>
 	</h:body>
 
 </html>

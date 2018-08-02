@@ -3,6 +3,9 @@
 	<name>PruebaPilotoWeb</name>
 	<comment></comment>
 	<projects>
+		<project>PruebaPiloto</project>
+		<project>PruebaPilotoEJB</project>
+		<project>RemoteSystemsTempFiles</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
